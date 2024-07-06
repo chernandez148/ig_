@@ -1,0 +1,172 @@
+body {
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+.App {
+  max-width: 935px;
+  margin: 5rem auto;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  margin-right: 32px;
+}
+
+.left img {
+  position: absolute;
+  transition: opacity 3s ease-in-out;
+}
+
+.left img:last-child {
+  position: relative;
+}
+
+.right form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 2rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 1px;
+}
+
+.right img {
+  margin: 2rem auto;
+}
+
+.right input {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d9d9d9;
+  background-color: #fafafa;
+  border-radius: 1px;
+}
+
+.right input:focus {
+  outline: none;
+}
+
+.right input::placeholder {
+  font-size: 12px;
+}
+
+.right button {
+  margin-top: 0.5rem;
+  padding: 0.65rem 1rem;
+  border: 0;
+  background-color: #0095f6;
+  opacity: 0.7;
+  border-radius: 8px;
+  color: white;
+}
+
+.right .divider {
+  display: flex;
+  align-items: center;
+}
+
+.divider hr {
+  width: 100%;
+}
+
+.divider h5 {
+  margin: 1rem;
+  color: #737373;
+}
+
+.right .facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.facebook a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: #385185;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+form a {
+  text-align: center;
+  color: #385185;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.right .create-account {
+  padding: 1.5rem;
+  margin: 0.75rem 0;
+  border: 1px solid #d9d9d9;
+  text-align: center;
+}
+
+.create-account span {
+  font-size: 14px;
+}
+
+.create-account a {
+  text-decoration: none;
+  color: #0095f6;
+  font-weight: 500;
+}
+
+.get-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get-app p {
+  font-size: 14px;
+}
+
+.app-store img {
+  margin: 0 0.5rem 0 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  margin: 1rem;
+}
+
+.footer div {
+  margin: 0.25rem 0.5rem;
+}
+
+.footer div a {
+  text-decoration: none;
+  color: #737373;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .left {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .right form {
+    width: 250px;
+  }
+}
+
+@media (max-width: 350px) {
+  .right form {
+    width: 200px;
+  }
+}
