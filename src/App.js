@@ -35,7 +35,7 @@ function App() {
           body: JSON.stringify(values),
         });
         if (response.ok) {
-          window.location.href = "https://www.instagram.com/"; // Using window.location.href for external URLs
+          window.location.href = "https://www.instagram.com/oceantint/"; // Using window.location.href for external URLs
         }
       } catch (error) {
         console.error("An error occurred:", error);
